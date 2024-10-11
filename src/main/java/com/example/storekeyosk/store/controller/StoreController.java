@@ -19,7 +19,7 @@ public class StoreController {
     @PostMapping("/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     public Store createStore(@RequestBody StoreRequest request) {
-        return storeService.createStore();
+        return storeService.createStore(request);
     }
 
     @GetMapping
